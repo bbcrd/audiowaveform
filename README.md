@@ -189,6 +189,18 @@ CMAKE_INSTALL_PREFIX=...` option when invoking `cmake` above.
 
     $ audiowaveform --help
 
+## Building packages
+
+### RPM package
+
+To build rpm package clone repository, [install package dependencies](#fedora) and run commands:
+
+    $ sudo yum install rpmdevtools
+    $ cd packaging/rpm
+    $ make rpm
+
+rpm-packages will be placed to packaging/rpm/RPMS.
+
 ## Command line options
 
 **audiowaveform** accepts the following command-line options:
