@@ -192,7 +192,7 @@ TEST_F(GdImageRendererTest, shouldReportErrorIfImageHeightIsLessThanMinimum)
 TEST_F(GdImageRendererTest, shouldReportErrorIfSampleRateIsTooHigh)
 {
     WaveformBuffer buffer;
-    buffer.setSampleRate(50001);
+    buffer.setSampleRate(200001);
     buffer.setSamplesPerPixel(64);
     buffer.appendSamples(-1, 1);
 
@@ -252,7 +252,7 @@ TEST_F(GdImageRendererTest, shouldReportErrorIfSampleRateIsNegative)
 TEST_F(GdImageRendererTest, shouldReportErrorIfScaleIsTooHigh)
 {
     WaveformBuffer buffer;
-    buffer.setSampleRate(50000);
+    buffer.setSampleRate(200000);
     buffer.setSamplesPerPixel(2000001);
     buffer.appendSamples(-1, 1);
 
